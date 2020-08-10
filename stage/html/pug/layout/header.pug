@@ -1,0 +1,49 @@
+.header
+    i.fa.fa-exchange.fa-lg.toggle-sidebar
+    .dropdown.notification-container
+      i.fa.fa-bell.fa-lg.header-icon.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      .dropdown-menu(aria-labelledby='notifications')
+        .noti-head
+          | Notifications
+          span 50
+        .noti-contnent
+          ul.list-unstyled
+            li
+              i.fa.fa-thumbs-o-up.fa-lg
+              | Anas Liked Your Profile
+            li
+              i.fa.fa-envelope-o.fa-lg
+              | You Got 2 Emails
+            li
+              i.fa.fa-money.fa-lg
+              | You Got Your Money It,s 5/12
+        .noti-foot.text-center: a(href="#") View All Notifications
+    i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+    .dropdown.usermenu-container
+      .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        img.avatar.rounded-circle(src="imgs/adly.png", alt="User Avatar")
+        span.user Ahmed Adly
+        i.fa.fa-angle-down.fa-lg
+      .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+        .user-info
+          h3 Ahmed Adly
+          p Premiur Member
+        hr
+        ul.activities-list.list-unstyled
+          li Added Comment How To Make
+          li Created Post In Category Science 
+          li Created Charts In Charts Page
+        hr
+        .row.usermenu-links
+          .col
+            .linx-box
+              i.fa.fa-gear.fa-lg.fa-fw
+              span Settings
+          .col
+            .linx-box
+              i.fa.fa-user.fa-lg.fa-fw
+              span My Profile
+          .col
+            .linx-box
+              i.fa.fa-power-off.fa-lg.fa-fw
+              span LogOut

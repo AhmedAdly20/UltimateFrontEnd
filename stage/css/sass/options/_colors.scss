@@ -1,0 +1,25 @@
+$themes: (green-theme: (color: #27ae60),
+    blue-theme: (color: #2980b9),
+    red-theme: (color: #c0392b),
+    orange-theme: (color: #f39c12),
+    midnight-theme: (color: #2c3e50),
+    yellow-theme: (color: #fff200)
+    );
+
+@each $theme,
+$map in $themes {
+    .#{$theme} {
+        .page .page-head .page-title{
+            color: map-get($map, color);
+        }
+        .page .sidebar .links-area .child-links a:hover:before{
+            background-color: map-get($map, color);
+        }
+        .header .toggle-sidebar:hover{
+            color: map-get($map, color);
+        }
+        .header .usermenu-container .dropdown-menu .user-info h3{
+            color: map-get($map, color);
+        }
+    }
+}
